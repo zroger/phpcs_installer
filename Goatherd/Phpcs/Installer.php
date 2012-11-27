@@ -17,7 +17,8 @@ class Installer extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return 'vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/' . $package->getPrettyName();
+        $name = basename($package->getPrettyName());
+        return $this->vendorDir . 'squizlabs/php_codesniffer/CodeSniffer/Standards/' . $name;
     }
 
     /**
