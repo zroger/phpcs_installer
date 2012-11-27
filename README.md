@@ -1,15 +1,18 @@
 phpcs installer
 ===============
 
-Composer-installer for PHP_Codesniffer standards.
+[Composer-installer](http://getcomposer.org/doc/articles/custom-installers.md) for
+[PHP_Codesniffer](https://github.com/squizlabs/PHP_CodeSniffer) standards.
 
-about
------
+features
+--------
 
-* installs PHP_CodeSniffer dependency (1.4+) through composer.
-* installs a `phpcs-standard` type composer repository within the `CodeSniffer/Standards/ directory.
+* installs PHP_CodeSniffer dependency (1.4+) through composer
+* installs a `phpcs-standard` type composer repository within the `CodeSniffer/Standards/ directory
 * registers your standard with the CodeSniffer provided under `vendor/bin/phpcs`
   (if you run `composer install` from within your repository)
+
+As you see it is about getting phpcs ready and working without need for those really long full paths.
 
 usage
 -----
@@ -43,3 +46,4 @@ limitations
 
 * Vendor-dir has to be `vendor/`
 * your standard must define `/ruleset.xml` and `/Sniff/` at exactly those positions
+* does not link tests (phpcs does not ship tests with composer)
