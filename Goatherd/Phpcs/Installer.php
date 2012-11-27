@@ -4,7 +4,7 @@
  * TODO add file header and class description
  */
 
-namespace Goatherd\\Phpcs;
+namespace Goatherd\Phpcs;
 
 use Composer\Package\PackageInterface;
 
