@@ -44,6 +44,5 @@ The installer is not needed for direct git install.
 limitations
 -----------
 
-* Vendor-dir has to be `vendor/`
 * your standard must define `/ruleset.xml` and `/Sniff/` at exactly those positions
 * does not link tests (phpcs does not ship tests with composer)
