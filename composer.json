@@ -7,7 +7,7 @@
     "standards",
     "composer-installer"
    ],
-  "homepage": "http://www.squizlabs.com/php-codesniffer",
+  "homepage": "https://github.com/goatherd/phpcs_installer",
   "license": "BSD-2-Clause",
   "authors": [
     {
